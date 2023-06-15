@@ -7,7 +7,7 @@
 :root {
   --text-color: #48424d;
   --white-color: #ffffff;
-  --background-color: #022c43
+  --background-color: #022c43;
   --main-color: #ffd336;
 }
 
@@ -15,7 +15,6 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   max-width: 1920px;
-  height: 100%;
   font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: 400;
