@@ -11,7 +11,7 @@ export const NavBar = () => {
       <div className={styles.wrapper}>
         <div className={styles.logo_container}>
           <Link to={AppRouterPath.HOME}>
-            <Logo className={styles.logo} size="s" />
+            <Logo className={styles.logo} />
           </Link>
           <input className={styles.menu__toggle} type="checkbox" id="menu__toggle" />
           <label className={styles.menu__btn} htmlFor="menu__toggle">
@@ -42,7 +42,6 @@ export const NavBar = () => {
             </li>
           </ul>
         </nav>
-        <div className={styles.social}></div>
       </div>
       <Outlet />
     </>
