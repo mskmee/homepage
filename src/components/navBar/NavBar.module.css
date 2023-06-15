@@ -42,9 +42,10 @@
   align-items: center;
   position: fixed;
   top: 20px;
-  right: 10px;
+  right: 10%;
   width: 26px;
   height: 26px;
+  opacity: 1;
   cursor: pointer;
   z-index: 1;
 }
@@ -70,6 +71,11 @@
   top: 8px;
 }
 
+.navigation {
+  display: flex;
+  flex-grow: 1;
+}
+
 .list {
   list-style: none;
   transform: translateX(-100%);
@@ -83,4 +89,26 @@
   display: flex;
   position: absolute;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  .menu__btn,
+  .menu__toggle {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+  .list {
+    transform: translateX(0);
+    opacity: 1;
+    background-color: transparent;
+    justify-content: flex-end;
+    gap: 4rem;
+    width: 80%;
+    visibility: visible;
+  }
 }
