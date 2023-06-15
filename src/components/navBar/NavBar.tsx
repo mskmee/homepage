@@ -1,9 +1,12 @@
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
+import styles from './NavBar.module.css';
 
 export const NavBar = () => {
   return (
     <>
-      <div>NavBar</div>
+      <nav className={styles.wrapper}>
+        <Link to=""></Link>
+      </nav>
       <Outlet />
     </>
   );
