@@ -1,7 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faCircleInfo, faEnvelope, faEye } from '@fortawesome/free-solid-svg-icons';
-
 import { AppRouterPath } from '../../types/AppRouterPath';
 import { Logo } from '../ui/logo/Logo';
 import styles from './NavBar.module.css';
@@ -10,9 +9,15 @@ export const NavBar = () => {
   return (
     <>
       <div className={styles.wrapper}>
-        <Link className={styles.logo} to={AppRouterPath.HOME}>
-          <Logo size="s" />
-        </Link>
+        <div className={styles.logo_container}>
+          <Link className={styles.logo} to={AppRouterPath.HOME}>
+            <Logo size="s" />
+          </Link>
+          <input className={styles.menu__toggle} type="checkbox" id="menu__toggle" />
+          <label className={styles.menu__btn} htmlFor="menu__toggle">
+            <span></span>
+          </label>
+        </div>
         <nav className={styles.navigation}>
           <ul className={styles.list}>
             <li>
