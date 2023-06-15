@@ -3,12 +3,13 @@ import styles from './Logo.module.css';
 
 interface LogoProps {
   size: LogoSize;
+  className?: string;
 }
 
-export const Logo = ({ size }: LogoProps) => {
+export const Logo = ({ size, className }: LogoProps) => {
   return (
     <svg
-      className={styles[size]}
+      className={(styles[size], className)}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       version="1.0"

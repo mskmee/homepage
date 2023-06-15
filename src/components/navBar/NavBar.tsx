@@ -10,8 +10,8 @@ export const NavBar = () => {
     <>
       <div className={styles.wrapper}>
         <div className={styles.logo_container}>
-          <Link className={styles.logo} to={AppRouterPath.HOME}>
-            <Logo size="s" />
+          <Link to={AppRouterPath.HOME}>
+            <Logo className={styles.logo} size="s" />
           </Link>
           <input className={styles.menu__toggle} type="checkbox" id="menu__toggle" />
           <label className={styles.menu__btn} htmlFor="menu__toggle">
@@ -22,26 +22,27 @@ export const NavBar = () => {
           <ul className={styles.list}>
             <li>
               <Link className={styles.home_link} to={AppRouterPath.HOME}>
-                <FontAwesomeIcon icon={faHome} color="yellow" />
+                <FontAwesomeIcon className={styles.icon} icon={faHome} color="yellow" />
               </Link>
             </li>
             <li>
               <Link className={styles.home_link} to={AppRouterPath.ABOUT}>
-                <FontAwesomeIcon icon={faCircleInfo} color="yellow" />
+                <FontAwesomeIcon className={styles.icon} icon={faCircleInfo} color="yellow" />
               </Link>
             </li>
             <li>
               <Link className={styles.home_link} to={AppRouterPath.PORTFOLIO}>
-                <FontAwesomeIcon icon={faEye} color="yellow" />
+                <FontAwesomeIcon className={styles.icon} icon={faEye} color="yellow" />
               </Link>
             </li>
             <li>
               <Link className={styles.home_link} to={AppRouterPath.CONTACT}>
-                <FontAwesomeIcon icon={faEnvelope} color="yellow" />
+                <FontAwesomeIcon className={styles.icon} icon={faEnvelope} color="yellow" />
               </Link>
             </li>
           </ul>
         </nav>
+        <div className={styles.social}></div>
       </div>
       <Outlet />
     </>

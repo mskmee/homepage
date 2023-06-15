@@ -96,12 +96,14 @@
     flex-direction: row;
     margin-bottom: 1rem;
   }
+
   .menu__btn,
   .menu__toggle {
     opacity: 0;
     display: none;
     visibility: hidden;
   }
+
   .list {
     transform: translateX(0);
     opacity: 1;
@@ -110,5 +112,35 @@
     gap: 4rem;
     width: 80%;
     visibility: visible;
+    border-top: transparent;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    margin: 0;
+    max-width: 120px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .list {
+    flex-direction: column;
+    width: auto;
+    padding: 0;
+    margin-left: 2rem;
+  }
+
+  .logo {
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 7rem;
+  }
+
+  .icon {
+    width: 4rem;
+    height: 4rem;
   }
 }
