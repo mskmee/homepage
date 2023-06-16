@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Logo } from '../../components/ui/logo/Logo';
 import styles from './Home.module.css';
 import { pageAnimation } from '../../animations';
+import classNames from 'classnames';
 
 const Home = () => {
   return (
@@ -12,8 +12,7 @@ const Home = () => {
       animate="show"
       className={styles.wrapper}
     >
-      <h1 className={styles.title}>Hi, I`m Maksim, web developer</h1>
-      <Logo className={styles.main_logo} />
+      <h1 className={classNames(styles.title, 'page_title')}>Hi, I`m Maksim, web developer</h1>
     </motion.div>
   );
 };

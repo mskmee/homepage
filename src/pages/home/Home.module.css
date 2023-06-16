@@ -5,35 +5,15 @@
   overflow: hidden;
 }
 
-.main_logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
 .title {
   padding: 1rem;
-  position: relative;
   font-size: 4rem;
-  color: var(--font-color);
-  font-family: 'Arimo', 'serif';
   z-index: 2;
-}
-
-@media screen and (min-width: 420px) {
-  .main_logo {
-    top: 60%;
-    left: 60%;
-  }
 }
 
 @media screen and (min-width: 600px) {
   .title {
     font-size: 6rem;
-  }
-  .main_logo {
-    top: 70%;
-    left: 70%;
   }
 }
 
@@ -41,8 +21,5 @@
   .title {
     text-align: center;
     font-size: 6.5rem;
-  }
-  .main_logo {
-    display: none;
   }
 }
