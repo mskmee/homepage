@@ -55,6 +55,10 @@ h1 {
   background-color: var(--background-color);
 }
 
+.main {
+  padding: 1rem;
+}
+
 @media screen and (min-width: 1024px) {
   #root {
     flex-direction: row;

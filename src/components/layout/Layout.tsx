@@ -8,12 +8,14 @@ export const Layout = () => {
     <>
       <NavBar />
       <span className={classNames(styles.tag, styles.tag_up)}> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
-      <Outlet />
-      <span className={classNames(styles.tag, styles.tag_bottom)}>
-        &nbsp;&nbsp;&nbsp;&lt;/body&gt;
-        <br />
-        &lt;/html&gt;
-      </span>
+      <main className="main">
+        <Outlet />
+        <span className={classNames(styles.tag, styles.tag_bottom)}>
+          &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+          <br />
+          &lt;/html&gt;
+        </span>
+      </main>
     </>
   );
 };

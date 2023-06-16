@@ -1,6 +1,5 @@
-import classNames from 'classnames';
-import styles from './Home.module.css';
 import { Logo } from '../../components/ui/logo/Logo';
+import styles from './Home.module.css';
 
 export const Home = () => {
   return (
