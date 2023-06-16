@@ -18,7 +18,7 @@ export const NavBar = () => {
             <span></span>
           </label>
         </div>
-        <nav className={styles.navigation}>
+        <div className={styles.navigation}>
           <ul className={styles.list}>
             <li>
               <Link className={styles.home_link} to={AppRouterPath.HOME}>
@@ -41,7 +41,7 @@ export const NavBar = () => {
               </Link>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
       <Outlet />
     </>

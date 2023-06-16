@@ -51,6 +51,7 @@ h1 {
   flex-direction: column;
   height: 100%;
   min-height: 100vh;
+  background-color: #022c43;
 }
 
 @media screen and (min-width: 1024px) {
