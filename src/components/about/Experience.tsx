@@ -5,7 +5,7 @@ export const Experience = () => {
   const subTitle = 'Experience:';
   return (
     <div className={styles.experience}>
-      <h2 className={styles.sub_title}>
+      <h2 aria-label={subTitle} className={styles.sub_title}>
         {subTitle.split('').map((char) => (
           <AnimatedText char={char} key={crypto.randomUUID()} />
         ))}
