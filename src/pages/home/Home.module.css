@@ -5,12 +5,6 @@
   overflow: hidden;
 }
 
-.title {
-  padding: 1rem;
-  font-size: 4rem;
-  z-index: 2;
-}
-
 .img_container {
   text-align: center;
   overflow: hidden;

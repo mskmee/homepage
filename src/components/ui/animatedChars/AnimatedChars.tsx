@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
+import { letterAnimation } from '../../../animations';
 
-interface AnimatedTextProps {
+interface AnimatedCharsProps {
   char: string;
 }
-export const AnimatedText = ({ char }: AnimatedTextProps) => {
+export const AnimatedChars = ({ char }: AnimatedCharsProps) => {
   return (
     <motion.span
       aria-hidden="true"
       style={{ display: 'inline-block', whiteSpace: 'pre' }}
-      whileHover={{ color: '#ffd336', scale: 1.3 }}
-      transition={{ type: 'spring', stiffness: 300 }}
+      variants={letterAnimation}
     >
       {char}
     </motion.span>
