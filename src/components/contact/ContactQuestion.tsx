@@ -1,10 +1,10 @@
-import styles from './ContactQuestion.module.css';
-import marvinImg from '../../assets/img//marvin.jpg';
-import { Button } from '../../components/ui/button/Button';
 import { ChangeEvent, useState } from 'react';
-import { ImgLoader } from '..';
 import { motion } from 'framer-motion';
-import { pageAnimation } from '../../animations';
+import styles from './ContactQuestion.module.css';
+
+import { Button, ImgLoader } from '@/components';
+import { pageAnimation } from '@/animations';
+import marvinImg from '@/assets/img//marvin.jpg';
 
 interface ContactQuestionProps {
   onSubmitHandler: () => void;

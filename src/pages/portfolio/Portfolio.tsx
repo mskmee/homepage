@@ -1,8 +1,9 @@
-import classNames from 'classnames';
-import { CardsWrapper } from '../../components';
-import styles from './Portfolio.module.css';
 import { motion } from 'framer-motion';
-import { titleAnimation } from '../../animations';
+import classNames from 'classnames';
+
+import { CardsWrapper } from '@/components';
+import { titleAnimation } from '@/animations';
+import styles from './Portfolio.module.css';
 
 const Portfolio = () => {
   return (

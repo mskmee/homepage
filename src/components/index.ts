@@ -8,3 +8,8 @@ export { Skills } from './about/Skills';
 export { Summary } from './about/Summary';
 export { Loader } from './loader/Loader';
 export { ImgLoader } from './ui/img/ImgLoader';
+export { AnimatedText } from './ui/animatedText/AnimatedText';
+export { AnimatedChars } from './ui//animatedChars/AnimatedChars';
+export { CardItem } from './cardItem/CardItem';
+export { Button } from './ui/button/Button';
+export { Logo } from './ui/logo/Logo';

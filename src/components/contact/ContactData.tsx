@@ -1,13 +1,13 @@
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
-import styles from './ContactData.module.css';
 import classNames from 'classnames';
-import { motion } from 'framer-motion';
-import { pageAnimation } from '../../animations';
-import { ImgLoader } from '..';
-import catImg from '../../assets/img/cat.jpg';
+
+import { pageAnimation } from '@/animations';
+import { ImgLoader } from '@/components';
+import styles from './ContactData.module.css';
+import catImg from '@/assets/img/cat.jpg';
 
 export const ContactData = () => {
   return (

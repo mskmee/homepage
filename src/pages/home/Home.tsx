@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import styles from './Home.module.css';
-import { fade, pageAnimation, titleAnimation } from '../../animations';
 import classNames from 'classnames';
-import { ImgLoader } from '../../components';
-import avatar from '../../assets/img/myPhoto.jpg';
-import { AnimatedText } from '../../components/ui/animatedText/AnimatedText';
+
+import { AnimatedText, ImgLoader } from '@/components';
+import { fade, pageAnimation, titleAnimation } from '@/animations';
+import styles from './Home.module.css';
+import avatar from '@/assets/img/myPhoto.jpg';
 
 const Home = () => {
   const message = 'Hi, I`m Maksim, web developer';

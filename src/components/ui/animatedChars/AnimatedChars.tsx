@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { letterAnimation } from '../../../animations';
+
+import { letterAnimation } from '@/animations';
 
 interface AnimatedCharsProps {
   char: string;

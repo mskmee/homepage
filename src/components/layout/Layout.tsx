@@ -1,9 +1,10 @@
 import { Outlet } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import classNames from 'classnames';
-import { NavBar } from '..';
+
 import styles from './Layout.module.css';
-import { AnimatePresence, motion } from 'framer-motion';
-import { pageAnimation } from '../../animations';
+import { NavBar } from '@/components';
+import { pageAnimation } from '@/animations';
 
 export const Layout = () => {
   return (

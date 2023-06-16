@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+
 import { About, Contact, Home, NotFound, Portfolio } from './pages';
 import { Layout } from './components';
 import { AppRouterPath } from './types/AppRouterPath';
