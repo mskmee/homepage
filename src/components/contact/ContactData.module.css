@@ -2,7 +2,35 @@
   padding: 1rem;
   background-color: var(--secondary-background-color);
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn {
+.brand_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.link {
+  color: var(--font-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  width: 300px;
+  font-size: 1.4rem;
+}
+
+.icon {
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--main-color);
+}
+
+.link:hover > .brand_wrapper > .icon {
+  color: var(--main-color);
 }
