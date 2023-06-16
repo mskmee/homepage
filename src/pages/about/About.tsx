@@ -1,7 +1,7 @@
 import { Experience, Skills, Summary } from '../../components';
 import styles from './About.module.css';
 
-export const About = () => {
+const About = () => {
   return (
     <div className={styles.about}>
       <h1 className={styles.title}>About Me</h1>
@@ -11,3 +11,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

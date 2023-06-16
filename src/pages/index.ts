@@ -1,5 +1,7 @@
-export { Home } from './home/Home';
-export { About } from './about/About';
-export { NotFound } from './notFound/NotFound';
-export { Portfolio } from './portfolio/Portfolio';
-export { Contact } from './contact/Contact';
+import { lazy } from 'react';
+
+export const Home = lazy(() => import('./home/Home'));
+export const NotFound = lazy(() => import('./notFound/NotFound'));
+export const About = lazy(() => import('./about/About'));
+export const Portfolio = lazy(() => import('./portfolio/Portfolio'));
+export const Contact = lazy(() => import('./contact/Contact'));
