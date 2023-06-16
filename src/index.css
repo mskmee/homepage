@@ -8,6 +8,7 @@
   --text-color: #48424d;
   --white-color: #ffffff;
   --background-color: #022c43;
+  --secondary-background-color: #181818;
   --main-color: #ffd336;
 }
 
@@ -19,7 +20,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
-  color: var(--text-color);
+  color: var(--white-color);
 }
 
 body::-webkit-scrollbar {
@@ -51,7 +52,7 @@ h1 {
   flex-direction: column;
   height: 100%;
   min-height: 100vh;
-  background-color: #022c43;
+  background-color: var(--background-color);
 }
 
 @media screen and (min-width: 1024px) {
