@@ -1,7 +1,9 @@
 import { ImgHTMLAttributes, useState } from 'react';
 import { Loader } from '../..';
+import styles from './ImgLoader.module.css';
+import classNames from 'classnames';
 
-export const ImgLoader = ({ ...props }: ImgHTMLAttributes<HTMLImageElement>) => {
+export const ImgLoader = ({ className, ...props }: ImgHTMLAttributes<HTMLImageElement>) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const setImageToLoad = () => {
@@ -10,7 +12,7 @@ export const ImgLoader = ({ ...props }: ImgHTMLAttributes<HTMLImageElement>) => 
   return (
     <>
       {!isImageLoaded && <Loader />}
-      <img {...props} onLoad={setImageToLoad} />
+      <img className={classNames(className, styles.img)} {...props} onLoad={setImageToLoad} />
     </>
   );
 };

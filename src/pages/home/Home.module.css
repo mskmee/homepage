@@ -1,6 +1,6 @@
 .wrapper {
   flex-grow: 1;
-  padding-top: 4rem;
+  padding-top: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -8,6 +8,38 @@
 .title {
   padding: 1rem;
   font-size: 4rem;
+  z-index: 2;
+}
+
+.img_container {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.img_container::before,
+.img_container::after {
+  position: absolute;
+  font-family: 'La Belle Aurore', 'serif';
+}
+
+.img_container::before {
+  top: 0;
+  left: 0;
+  content: '<img>';
+}
+
+.img_container::after {
+  bottom: 0;
+  right: 0;
+  content: '</img>';
+}
+
+.img {
+  position: relative;
+  width: 70%;
+  border-radius: 5px;
+  max-width: 600px;
   z-index: 2;
 }
 
