@@ -2,6 +2,8 @@ import { useState } from 'react';
 import styles from './Contact.module.css';
 import { ContactData, ContactQuestion } from '../../components';
 import classNames from 'classnames';
+import { titleAnimation } from '../../animations';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Contact = () => {
   const [isHuman, setIsHuman] = useState(false);
@@ -11,8 +13,12 @@ const Contact = () => {
 
   return (
     <div className={styles.contact}>
-      <h1 className={classNames(styles.title, 'page_title')}>Fill free to contact me</h1>
-      {isHuman ? <ContactData /> : <ContactQuestion onSubmitHandler={onSubmitHandler} />}
+      <motion.h1 variants={titleAnimation} className={classNames(styles.title, 'page_title')}>
+        Fill free to contact me
+      </motion.h1>
+      <AnimatePresence>
+        {isHuman ? <ContactData /> : <ContactQuestion onSubmitHandler={onSubmitHandler} />}
+      </AnimatePresence>
     </div>
   );
 };
