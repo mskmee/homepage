@@ -1,9 +1,15 @@
+import { AnimatedText } from '../ui/animatedText/AnimatedText';
 import styles from './Experience.module.css';
 
 export const Experience = () => {
+  const subTitle = 'Experience:';
   return (
     <div className={styles.experience}>
-      <h2 className={styles.sub_title}>Experience:</h2>
+      <h2 className={styles.sub_title}>
+        {subTitle.split('').map((char) => (
+          <AnimatedText char={char} key={crypto.randomUUID()} />
+        ))}
+      </h2>
       <ul className={styles.list}>
         <li className={styles.list_item}>
           <p className={styles.date}>April 2020 - February 2022</p>

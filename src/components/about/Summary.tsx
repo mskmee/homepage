@@ -3,7 +3,7 @@ import styles from './Summary.module.css';
 export const Summary = () => {
   return (
     <div className={styles.summary}>
-      <h2 className={styles.sub_title}>Summary</h2>
+      <h2 className={styles.sub_title}>Summary:</h2>
       <div className={styles.description}>
         Results-oriented and highly motivated Front-end Developer with a passion for creating
         captivating and user-friendly web experiences. With a strong foundation in HTML, CSS, and
@@ -16,7 +16,8 @@ export const Summary = () => {
         latest industry trends and best practices, I strive to continuously enhance my skill set.
       </div>
       <div className={styles.final}>
-        Long story short: I am a guy who loves programming and technology, enjoys 🏃, and adores 😺!
+        Long story short: I am a guy who loves programming and technologies, enjoys 🏃, and adores
+        😺!
       </div>
     </div>
   );

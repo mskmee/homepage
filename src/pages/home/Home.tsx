@@ -8,7 +8,6 @@ import { AnimatedText } from '../../components/ui/animatedText/AnimatedText';
 
 const Home = () => {
   const message = 'Hi, I`m Maksim, web developer';
-  const messageArr = message.split('');
   return (
     <motion.div
       exit="exit"
@@ -25,7 +24,7 @@ const Home = () => {
         variants={titleAnimation}
         className={classNames(styles.title, 'page_title')}
       >
-        {messageArr.map((char) => (
+        {message.split('').map((char) => (
           <AnimatedText char={char} key={crypto.randomUUID()} />
         ))}
       </motion.h1>
