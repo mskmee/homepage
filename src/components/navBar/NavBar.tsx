@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faCircleInfo, faEnvelope, faEye } from '@fortawesome/free-solid-svg-icons';
 import { AppRouterPath } from '../../types/AppRouterPath';
@@ -43,7 +43,6 @@ export const NavBar = () => {
           </ul>
         </div>
       </div>
-      <Outlet />
     </>
   );
 };

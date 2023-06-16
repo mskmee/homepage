@@ -1,0 +1,14 @@
+.tag {
+  position: absolute;
+  font-family: 'La Belle Aurore', 'serif';
+}
+
+.tag_up {
+  top: 5%;
+  left: 10%;
+}
+
+.tag_bottom {
+  bottom: 5%;
+  left: 10%;
+}
