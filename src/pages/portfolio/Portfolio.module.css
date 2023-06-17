@@ -1,0 +1,24 @@
+.portfolio {
+  padding-top: 4rem;
+  height: 100vh;
+  overflow: auto;
+}
+
+.portfolio::-webkit-scrollbar {
+  width: 5px;
+}
+
+.portfolio::-webkit-scrollbar-track {
+  background: rgb(235, 238, 241);
+}
+
+.portfolio::-webkit-scrollbar-thumb {
+  background-color: rgb(200, 200, 200);
+  border-radius: 20px;
+  border: 3px solid var(--main-color);
+}
+
+.title {
+  text-align: center;
+  font-family: 'Arimo', 'serif';
+}
