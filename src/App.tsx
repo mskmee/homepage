@@ -1,30 +1,31 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { About, Contact, Home, NotFound, Portfolio } from './pages';
 import { NavBar } from './components';
+import { AppRouterPath } from './types/AppRouterPath';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: AppRouterPath.HOME,
     element: <NavBar />,
     children: [
       {
-        path: '/',
+        path: AppRouterPath.HOME,
         element: <Home />,
       },
       {
-        path: '/about',
+        path: AppRouterPath.ABOUT,
         element: <About />,
       },
       {
-        path: '/portfolio',
+        path: AppRouterPath.PORTFOLIO,
         element: <Portfolio />,
       },
       {
-        path: '/contact',
+        path: AppRouterPath.CONTACT,
         element: <Contact />,
       },
       {
-        path: '*',
+        path: AppRouterPath.NOT_FOUND,
         element: <NotFound />,
       },
     ],
