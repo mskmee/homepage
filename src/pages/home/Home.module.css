@@ -28,7 +28,7 @@
   padding: 1rem;
   position: relative;
   font-size: 4rem;
-  color: var(--white-color);
+  color: var(--font-color);
   font-family: 'Arimo', 'serif';
   z-index: 2;
 }

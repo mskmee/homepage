@@ -6,7 +6,7 @@
 
 :root {
   --text-color: #48424d;
-  --white-color: #ffffff;
+  --font-color: #ffffff;
   --background-color: #022c43;
   --secondary-background-color: #181818;
   --main-color: #ffd336;
@@ -20,7 +20,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
-  color: var(--white-color);
+  color: var(--font-color);
 }
 
 body::-webkit-scrollbar {
