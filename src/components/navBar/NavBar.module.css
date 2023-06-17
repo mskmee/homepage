@@ -129,6 +129,7 @@
 
 @media screen and (min-width: 1024px) {
   .wrapper {
+    gap: 9rem;
     max-width: 130px;
     flex-direction: column;
     align-items: center;
@@ -138,10 +139,6 @@
     position: relative;
     flex-direction: column;
     width: auto;
-  }
-
-  .logo_container {
-    margin-bottom: auto;
   }
 
   .logo {
