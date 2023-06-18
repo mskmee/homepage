@@ -5,7 +5,7 @@ export const Skills = () => {
   const subTitle = 'Skills:';
   return (
     <div className={styles.skills}>
-      <h2 className={styles.sub_title}>
+      <h2 aria-label={subTitle} className={styles.sub_title}>
         {subTitle.split('').map((char) => (
           <AnimatedText char={char} key={crypto.randomUUID()} />
         ))}

@@ -1,9 +1,15 @@
+import { AnimatedText } from '../ui/animatedText/AnimatedText';
 import styles from './Summary.module.css';
 
 export const Summary = () => {
+  const subTitle = 'Summary:';
   return (
     <div className={styles.summary}>
-      <h2 className={styles.sub_title}>Summary:</h2>
+      <h2 aria-label={subTitle} className={styles.sub_title}>
+        {subTitle.split('').map((char) => (
+          <AnimatedText char={char} key={crypto.randomUUID()} />
+        ))}
+      </h2>
       <div className={styles.description}>
         Results-oriented and highly motivated Front-end Developer with a passion for creating
         captivating and user-friendly web experiences. With a strong foundation in HTML, CSS, and

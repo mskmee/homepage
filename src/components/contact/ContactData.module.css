@@ -3,9 +3,17 @@
   background-color: var(--secondary-background-color);
   border-radius: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.img {
+  display: block;
+  width: 70%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 .brand_wrapper {
