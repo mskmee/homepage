@@ -22,6 +22,31 @@ export const titleAnimation = {
   show: { y: 0, transition: { duration: 0.75, ease: 'easeOut' } },
 };
 
-export const charAnimation = {
-  whileHover: { color: 'red' },
+export const sentenceAnimation = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.03, delayChildren: 0.02 },
+  },
+};
+
+export const letterAnimation = {
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      damping: 12,
+      stiffness: 100,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    x: 20,
+    transition: {
+      type: 'spring',
+      damping: 12,
+      stiffness: 100,
+    },
+  },
 };

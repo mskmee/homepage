@@ -3,6 +3,8 @@ import marvinImg from '../../assets/img//marvin.jpg';
 import { Button } from '../../components/ui/button/Button';
 import { ChangeEvent, useState } from 'react';
 import { ImgLoader } from '..';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../../animations';
 
 interface ContactQuestionProps {
   onSubmitHandler: () => void;
@@ -30,7 +32,12 @@ export const ContactQuestion = ({ onSubmitHandler }: ContactQuestionProps) => {
     onSubmitHandler();
   };
   return (
-    <form onSubmit={onFormSubmit} className={styles.form}>
+    <motion.form
+      variants={pageAnimation}
+      id="contact-question"
+      onSubmit={onFormSubmit}
+      className={styles.form}
+    >
       <ImgLoader className={styles.img} alt="about me image" src={marvinImg} />
       <label className={styles.question} htmlFor="answer">
         Please confirm that you are not a robot. Enter the answer to the ultimate question of life,
@@ -51,6 +58,6 @@ export const ContactQuestion = ({ onSubmitHandler }: ContactQuestionProps) => {
         Give me a tip
       </Button>
       {isTip && <p className={styles.tip}>Errors often help to find the correct answer.</p>}
-    </form>
+    </motion.form>
   );
 };

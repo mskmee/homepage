@@ -4,10 +4,12 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './ContactData.module.css';
 import classNames from 'classnames';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../../animations';
 
 export const ContactData = () => {
   return (
-    <div className={styles.contacts_data}>
+    <motion.div id="contact-data" variants={pageAnimation} className={styles.contacts_data}>
       <a
         className={styles.link}
         href="https://telegram.im/@mskmee"
@@ -36,6 +38,6 @@ export const ContactData = () => {
           Email
         </div>
       </a>
-    </div>
+    </motion.div>
   );
 };

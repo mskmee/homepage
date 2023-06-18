@@ -10,12 +10,18 @@
   background-color: var(--secondary-background-color);
 }
 
+.btn {
+  width: 100px;
+  padding: 1rem;
+}
+
 .input {
   border-radius: 5px;
   padding: 10px;
 }
 
 .img {
+  border-radius: 5px;
   display: block;
   width: 70%;
 }
