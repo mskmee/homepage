@@ -1,0 +1,1 @@
+import{r as m,j as s,L as d,c,o as n}from"./index-21abde5c.js";const x=({className:a,...e})=>{const[o,t]=m.useState(!1),r=()=>{t(!0)};return s.jsxs(s.Fragment,{children:[!o&&s.jsx(d,{}),s.jsx("img",{className:c(a,n.img),...e,onLoad:r})]})};export{x as I};

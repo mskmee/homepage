@@ -1,0 +1,1 @@
+import{j as i,m as s}from"./index-21abde5c.js";const n=({char:e})=>i.jsx(s.span,{"aria-hidden":"true",style:{display:"inline-block",whiteSpace:"pre"},whileHover:{color:"#ffd336",scale:1.3},transition:{type:"spring",stiffness:300},children:e});export{n as A};
