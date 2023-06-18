@@ -2,6 +2,7 @@ import styles from './ContactQuestion.module.css';
 import marvinImg from '../../assets/img//marvin.jpg';
 import { Button } from '../../components/ui/button/Button';
 import { ChangeEvent, useState } from 'react';
+import { ImgLoader } from '..';
 
 interface ContactQuestionProps {
   onSubmitHandler: () => void;
@@ -30,7 +31,7 @@ export const ContactQuestion = ({ onSubmitHandler }: ContactQuestionProps) => {
   };
   return (
     <form onSubmit={onFormSubmit} className={styles.form}>
-      <img className={styles.img} alt="about me image" src={marvinImg} />
+      <ImgLoader className={styles.img} alt="about me image" src={marvinImg} />
       <label className={styles.question} htmlFor="answer">
         Please confirm that you are not a robot. Enter the answer to the ultimate question of life,
         the universe, and everything.

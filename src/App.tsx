@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { About, Contact, Home, NotFound, Portfolio } from './pages';
 import { Layout } from './components';
 import { AppRouterPath } from './types/AppRouterPath';
+import { Suspense } from 'react';
+import { Loader } from './components/loader/Loader';
 
 const router = createBrowserRouter([
   {
@@ -33,5 +35,9 @@ const router = createBrowserRouter([
 ]);
 
 export function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback={<Loader />}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }

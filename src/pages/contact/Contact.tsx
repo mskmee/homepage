@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './Contact.module.css';
 import { ContactData, ContactQuestion } from '../../components';
 
-export const Contact = () => {
+const Contact = () => {
   const [isHuman, setIsHuman] = useState(false);
   const onSubmitHandler = () => {
     setIsHuman(true);
@@ -15,3 +15,4 @@ export const Contact = () => {
     </div>
   );
 };
+export default Contact;

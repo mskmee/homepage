@@ -1,7 +1,7 @@
 import { Logo } from '../../components/ui/logo/Logo';
 import styles from './Home.module.css';
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.title}>Hi, I`m Maksim, web developer</h1>
@@ -9,3 +9,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;
