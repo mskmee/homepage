@@ -5,19 +5,6 @@
   overflow: hidden;
 }
 
-.tag {
-  position: absolute;
-  font-family: 'La Belle Aurore', 'serif';
-}
-
-.tag_up {
-  top: 0;
-}
-
-.tag_bottom {
-  bottom: 0;
-}
-
 .main_logo {
   position: absolute;
   top: 50%;
