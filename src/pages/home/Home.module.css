@@ -1,39 +1,51 @@
 .wrapper {
   flex-grow: 1;
-  padding-top: 4rem;
+  padding-top: 1rem;
   position: relative;
   overflow: hidden;
 }
 
-.main_logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
 .title {
   padding: 1rem;
-  position: relative;
   font-size: 4rem;
-  color: var(--font-color);
-  font-family: 'Arimo', 'serif';
   z-index: 2;
 }
 
-@media screen and (min-width: 420px) {
-  .main_logo {
-    top: 60%;
-    left: 60%;
-  }
+.img_container {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.img_container::before,
+.img_container::after {
+  position: absolute;
+  font-family: 'La Belle Aurore', 'serif';
+}
+
+.img_container::before {
+  top: 0;
+  left: 0;
+  content: '<img>';
+}
+
+.img_container::after {
+  bottom: 0;
+  right: 0;
+  content: '</img>';
+}
+
+.img {
+  position: relative;
+  width: 70%;
+  border-radius: 5px;
+  max-width: 600px;
+  z-index: 2;
 }
 
 @media screen and (min-width: 600px) {
   .title {
     font-size: 6rem;
-  }
-  .main_logo {
-    top: 70%;
-    left: 70%;
   }
 }
 
@@ -41,8 +53,5 @@
   .title {
     text-align: center;
     font-size: 6.5rem;
-  }
-  .main_logo {
-    display: none;
   }
 }

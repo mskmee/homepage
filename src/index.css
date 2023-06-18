@@ -59,6 +59,32 @@ h1 {
   padding: 1rem;
 }
 
+.page_title {
+  text-align: center;
+  font-family: 'Arimo', 'serif';
+  position: relative;
+  margin: 2rem 0;
+}
+
+.page_title::before,
+.page_title::after {
+  position: absolute;
+  font-family: 'La Belle Aurore', 'serif';
+  font-size: 2rem;
+}
+
+.page_title::before {
+  top: -10%;
+  left: 5%;
+  content: '<h1>';
+}
+
+.page_title::after {
+  bottom: -10%;
+  right: 0;
+  content: '</h1>';
+}
+
 @media screen and (min-width: 1024px) {
   #root {
     flex-direction: row;

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './Contact.module.css';
 import { ContactData, ContactQuestion } from '../../components';
+import classNames from 'classnames';
 
 const Contact = () => {
   const [isHuman, setIsHuman] = useState(false);
@@ -10,7 +11,7 @@ const Contact = () => {
 
   return (
     <div className={styles.contact}>
-      <h1 className={styles.title}>Fill free to contact me</h1>
+      <h1 className={classNames(styles.title, 'page_title')}>Fill free to contact me</h1>
       {isHuman ? <ContactData /> : <ContactQuestion onSubmitHandler={onSubmitHandler} />}
     </div>
   );

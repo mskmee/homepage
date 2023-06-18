@@ -8,7 +8,7 @@ export const CardItem = ({ deployUrl, img, repoUrl, title }: PortfolioData) => {
       <div className={styles.img_wrapper}>
         <ImgLoader className={styles.img} src={img} alt={title} />
       </div>
-      <h3 className={styles.title}>{title}</h3>
+      <h3 className={styles.sub_title}>{title}</h3>
       <div className={styles.links}>
         <a className={styles.btn} target="_blank" rel="noreferrer" href={repoUrl}>
           Code
