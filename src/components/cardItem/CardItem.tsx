@@ -1,5 +1,5 @@
-import { ImgLoader } from '..';
-import { PortfolioData } from '../../types/PortfolioData';
+import { ImgLoader } from '@/components';
+import { PortfolioData } from '@/types/PortfolioData';
 import styles from './CardItem.module.css';
 
 export const CardItem = ({ deployUrl, img, repoUrl, title }: PortfolioData) => {

@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
-import { Experience, Skills, Summary } from '../../components';
+
+import { titleAnimation } from '@/animations';
+import { Experience, Skills, Summary } from '@/components';
 import styles from './About.module.css';
-import { titleAnimation } from '../../animations';
 
 const About = () => {
   return (

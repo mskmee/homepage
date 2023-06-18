@@ -1,4 +1,4 @@
-import { AnimatedText } from '../ui/animatedText/AnimatedText';
+import { AnimatedText } from '@/components';
 import styles from './Experience.module.css';
 
 export const Experience = () => {

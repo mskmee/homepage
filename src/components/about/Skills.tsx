@@ -1,4 +1,4 @@
-import { AnimatedText } from '../ui/animatedText/AnimatedText';
+import { AnimatedText } from '@/components';
 import styles from './Skills.module.css';
 
 export const Skills = () => {

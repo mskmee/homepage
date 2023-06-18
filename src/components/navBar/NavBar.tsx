@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faCircleInfo, faEnvelope, faEye } from '@fortawesome/free-solid-svg-icons';
-import { AppRouterPath } from '../../types/AppRouterPath';
-import { Logo } from '../ui/logo/Logo';
+
+import { AppRouterPath } from '@/types/AppRouterPath';
 import styles from './NavBar.module.css';
+import { Logo } from '@/components';
 
 export const NavBar = () => {
   return (

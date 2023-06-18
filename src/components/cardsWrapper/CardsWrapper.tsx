@@ -1,5 +1,5 @@
-import { portfolioData } from '../../utils/data';
-import { CardItem } from '../cardItem/CardItem';
+import { CardItem } from '@/components';
+import { portfolioData } from '@/utils/data';
 import styles from './CardsWrapper.module.css';
 
 export const CardsWrapper = () => {

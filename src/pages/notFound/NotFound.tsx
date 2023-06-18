@@ -1,10 +1,10 @@
-import styles from './NotFound.module.css';
-import notFoundImg from '../../assets/img/notFound.png';
-import { ImgLoader } from '../../components';
-import classNames from 'classnames';
 import { motion } from 'framer-motion';
-import { sentenceAnimation, titleAnimation } from '../../animations';
-import { AnimatedChars } from '../../components/ui/animatedChars/AnimatedChars';
+import classNames from 'classnames';
+
+import notFoundImg from '@/assets/img/notFound.png';
+import { AnimatedChars, ImgLoader } from '@/components';
+import { sentenceAnimation, titleAnimation } from '@/animations';
+import styles from './NotFound.module.css';
 
 const NotFound = () => {
   const description =

@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import styles from './Contact.module.css';
-import { ContactData, ContactQuestion } from '../../components';
-import classNames from 'classnames';
-import { titleAnimation } from '../../animations';
 import { AnimatePresence, motion } from 'framer-motion';
+import classNames from 'classnames';
+
+import styles from './Contact.module.css';
+import { ContactData, ContactQuestion } from '@/components';
+import { titleAnimation } from '@/animations';
 
 const Contact = () => {
   const [isHuman, setIsHuman] = useState(false);
