@@ -8,7 +8,8 @@
 
 .logo_container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -45,14 +46,10 @@
 .menu__btn {
   display: flex;
   align-items: center;
-  position: fixed;
-  top: 20px;
-  right: 10%;
-  width: 26px;
-  height: 26px;
+  width: 2rem;
+  height: 2rem;
   opacity: 1;
   cursor: pointer;
-  z-index: 1;
 }
 
 .menu__btn > span,
@@ -60,7 +57,7 @@
 .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 2rem;
   height: 2px;
   background-color: var(--font-color);
   transition-duration: 0.25s;
@@ -92,6 +89,7 @@
   opacity: 0;
   display: flex;
   position: absolute;
+  margin: 0;
   width: 100%;
 }
 
